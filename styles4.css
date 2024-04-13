@@ -1,0 +1,113 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.right-time {
+    display: flex;
+    gap: 10px;
+}
+
+.left-icons {
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    height: 600px;
+    
+    margin-top: 0px;
+    
+
+     
+}
+
+.card{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    
+}
+
+.input-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    color: black;
+}
+
+.input-items input{
+    padding: 13px;
+    margin: 2px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+}
+
+
+.arrow-btn {
+    margin-top: 90px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background-color: #0056b3;
+}
+
+.divider{
+    margin: 30px;
+}
+
+.icons-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+}
+
+.fa-google{
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.fa-facebook{
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.fa-google:hover{
+    background-color: whitesmoke;
+    font-size: 22px;
+    transition:0.3s;
+}
+.fa-facebook:hover{
+    background-color: whitesmoke;
+    font-size: 22px;
+    transition:0.3s;
+}

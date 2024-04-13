@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <nav class="navbar">
+            <div class="left-icons">
+                <span class="time">9:41</span>
+            </div>
+            <div class="right-time">
+                <span><i class="fa-solid fa-signal icon"></i></span>
+                <span><i class="fa-solid fa-wifi icon"></i></span>
+                <span><i class="fa-solid fa-battery-full icon"></i></span>
+            </div>
+    
+        </nav>
+        
+    
+    <div class="content">
+        
+        <div class="card">
+            <h1>Welcome Back</h1>
+            <div class="input-items">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                
+            </div>
+            <a href="#">Forgot Your Password</a>
+                
+                <button class="arrow-btn" id="createAccountBtn" onclick="navigateToNewPage()" >
+                    Sign In
+                </button>
+                <div class="divider">
+                    <span class="or">OR</span>
+                </div>
+                <div class="icons-log">
+                    <i class="fa-brands fa-google "></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <p>Don't have an account yet? <a href="third_page.html">Create an account</a></p>
+               
+            </div>
+              
+    </div>
+    <script >
+        function navigateToNewPage() {
+    window.location.href = "fifth_page.html";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <nav class="navbar">
+            <div class="left-icons">
+                <span class="time">9:41</span>
+            </div>
+            <div class="right-time">
+                <span><i class="fa-solid fa-signal icon"></i></span>
+                <span><i class="fa-solid fa-wifi icon"></i></span>
+                <span><i class="fa-solid fa-battery-full icon"></i></span>
+            </div>
+    
+        </nav>
+        
+    
+    <div class="content">
+        
+        <div class="card">
+            <h1>Create an Account</h1>
+            <div class="input-items">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="checkbox" id="checkBox" >
+                <label for="checkBox" >By proceeding, I agree to all T&C and Privacy Policy</label>
+                </div>
+                <!-- <button class="arrow-btn" onclick="navigateToNewPage()">
+                    Create an Account
+                </button> -->
+                <button class="arrow-btn" id="createAccountBtn" onclick="navigateToNewPage()" disabled>
+                    Create an Account
+                </button>
+                <div class="divider">
+                    <span class="or">OR</span>
+                </div>
+                <div class="icons-log">
+                    <i class="fa-brands fa-google "></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <p>Already have an account? <a href="fourth_page.html">Login</a></p>
+            </div>
+              
+    </div>
+    
+    
+    <script >
+
+
+document.getElementById('checkBox').addEventListener('change', function() {
+    // Get the checkbox and button elements
+    var checkBox = document.getElementById('checkBox');
+    var createBtn = document.getElementById('createAccountBtn');
+
+    // Enable or disable the button based on checkbox status
+    if (checkBox.checked) {
+        createBtn.disabled = false;
+    } else {
+        createBtn.disabled = true;
+    }
+});
+
+
+function navigateToNewPage() {
+    // Check if the create account button is not disabled
+    if (!document.getElementById('createAccountBtn').disabled) {
+        window.location.href = "fifth_page.html";
+    } else {
+        alert("Please agree to the terms and conditions to continue.");
+    }
+}
+    </script>
+</body>
+</html>
